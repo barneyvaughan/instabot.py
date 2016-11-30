@@ -51,10 +51,10 @@ while True:
 
     # DON'T USE MODE 5 FOR A LONG PERIOD. YOU RISK YOUR ACCOUNT FROM GETTING BANNED
     ## USE MODE 5 IN BURST MODE, USE IT TO UNFOLLOW PEOPLE AS MANY AS YOU WANT IN SHORT TIME PERIOD
+    mode = 6;
+    ##mode = raw_input('Select an Option to start the system running: ');
 
-    mode = raw_input('Select an Option to start the system running');
-
-    #print("You choose mode : %i" %(mode))
+    print("You choose mode : %i" %(mode))
     #print("CTRL + C to cancel this operation or wait 30 seconds to start")
     #time.sleep(30)
 
@@ -100,6 +100,7 @@ while True:
           ui = UserInfo();
           medias = ui.get_media_by_login(user)
           ex = 1;
+          print(medias);
           for media in medias:
               bot.like(media)
               print("Liked media %i of %i" %(ex, len(medias)))

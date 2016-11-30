@@ -53,7 +53,8 @@ class UserInfo:
         
         for rawmedia in medias:
             the_media.append(rawmedia['id'])
-        return json.loads(the_media[0:3]);
+        
+        return the_media;
     def search_user(self, user_id=None, user_name=None):
         '''
         Search user_id or user_name, if you don't have it.
