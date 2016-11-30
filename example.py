@@ -11,6 +11,7 @@ from follow_protocol import follow_protocol
 from userinfo import UserInfo
 import time
 
+
 login = raw_input("Enter your username: ");
 password = raw_input("Enter your password: ");
 bot = InstaBot(login, password,
@@ -35,7 +36,7 @@ bot = InstaBot(login, password,
                                         'corp','tas','butik','grosir','karpet','sosis','salon','skin','care','cloth','tech','rental',
                                         'kamera','beauty','express','kredit','collection','impor','preloved','follow','follower','gain',
                                         '.id','_id','bags'])
-while True:
+while bot.login_status == True:
 
     print("# MODE 0 = ORIGINAL MODE BY LEVPASHA")
     print("## MODE 1 = MODIFIED MODE BY KEMONG")
