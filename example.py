@@ -94,7 +94,7 @@ while True:
         unfollow_protocol(bot)
     elif mode == 6 :
         # USER LIST - FILL IN DESIRED ACCOUNTS
-        userlist = ['barney_vaughan', 'therock']
+        userlist = ['barney_vaughan']
         for user in userlist:  
           print("Liking %s's 12 most recent media" %(user));
           ui = UserInfo();
