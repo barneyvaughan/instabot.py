@@ -8,6 +8,7 @@ from check_status import check_status
 from feed_scanner import feed_scanner
 from unfollow_protocol import unfollow_protocol
 from follow_protocol import follow_protocol
+from userinfo import UserInfo
 import time
 
 
@@ -89,6 +90,17 @@ while True:
     elif mode == 5 :
         bot.bot_mode=2
         unfollow_protocol(bot)
-
+    elif mode == 11 :
+        userlist = ['barney_vaughan', 'therock']
+        for user in userlist:  
+          print("Liking %s's 12 most recent media" %(user));
+          ui = UserInfo();
+          medias = ui.get_media_by_login(user)
+          ex = 1;
+          for media in medias:
+              bot.like(media)
+              print("Liked media %i of %i" %(ex, len(medias)))
+              ex = ex + 1;
+              time.sleep(10);
     else :
         print ("Wrong mode!")
