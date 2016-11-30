@@ -42,7 +42,8 @@ while True:
     #print("#### MODE 3 = MODIFIED MODE : UNFOLLOW PEOPLE WHO DON'T FOLLOW BACK BASED ON RECENT FEED ONLY")
     #print("##### MODE 4 = MODIFIED MODE : FOLLOW PEOPLE BASED ON RECENT FEED ONLY")
     #print("###### MODE 5 = MODIFIED MODE : JUST UNFOLLOW EVERYBODY, EITHER YOUR FOLLOWER OR NOT")
-
+    #print("####### MODE 6 = MODIFIED MODE BY BARNEY : LIKE MOST RECENT IN LIST");
+    
     ################################
            ##  WARNING   ###
     ################################
@@ -90,7 +91,8 @@ while True:
     elif mode == 5 :
         bot.bot_mode=2
         unfollow_protocol(bot)
-    elif mode == 11 :
+    elif mode == 6 :
+        # USER LIST - FILL IN DESIRED ACCOUNTS
         userlist = ['barney_vaughan', 'therock']
         for user in userlist:  
           print("Liking %s's 12 most recent media" %(user));
