@@ -43,7 +43,17 @@ class UserInfo:
         all_data = json.loads(info.text)
         id_user = all_data['user']['id']
         return id_user
-
+    def get_media_by_login(self, user_name):
+        url_info= self.url_user_info % (user_name)
+        info = self.s.get(url_info)
+        all_data = json.loads(info.text)
+       
+        the_media = [];
+        medias = all_data['user']['media']['nodes']
+        
+        for rawmedia in medias:
+            the_media.append(rawmedia['id'])
+        return json.loads(the_media[0:3]);
     def search_user(self, user_id=None, user_name=None):
         '''
         Search user_id or user_name, if you don't have it.
