@@ -36,13 +36,13 @@ bot = InstaBot(login="username", password="password",
                                         '.id','_id','bags'])
 while True:
 
-    #print("# MODE 0 = ORIGINAL MODE BY LEVPASHA")
-    #print("## MODE 1 = MODIFIED MODE BY KEMONG")
-    #print("### MODE 2 = ORIGINAL MODE + UNFOLLOW WHO DON'T FOLLOW BACK")
-    #print("#### MODE 3 = MODIFIED MODE : UNFOLLOW PEOPLE WHO DON'T FOLLOW BACK BASED ON RECENT FEED ONLY")
-    #print("##### MODE 4 = MODIFIED MODE : FOLLOW PEOPLE BASED ON RECENT FEED ONLY")
-    #print("###### MODE 5 = MODIFIED MODE : JUST UNFOLLOW EVERYBODY, EITHER YOUR FOLLOWER OR NOT")
-    #print("####### MODE 6 = MODIFIED MODE BY BARNEY : LIKE MOST RECENT IN LIST");
+    print("# MODE 0 = ORIGINAL MODE BY LEVPASHA")
+    print("## MODE 1 = MODIFIED MODE BY KEMONG")
+    print("### MODE 2 = ORIGINAL MODE + UNFOLLOW WHO DON'T FOLLOW BACK")
+    print("#### MODE 3 = MODIFIED MODE : UNFOLLOW PEOPLE WHO DON'T FOLLOW BACK BASED ON RECENT FEED ONLY")
+    print("##### MODE 4 = MODIFIED MODE : FOLLOW PEOPLE BASED ON RECENT FEED ONLY")
+    print("###### MODE 5 = MODIFIED MODE : JUST UNFOLLOW EVERYBODY, EITHER YOUR FOLLOWER OR NOT")
+    print("####### MODE 6 = MODIFIED MODE BY BARNEYVAUGHAN : LIKE MOST RECENT IN LIST");
     
     ################################
            ##  WARNING   ###
@@ -51,7 +51,7 @@ while True:
     # DON'T USE MODE 5 FOR A LONG PERIOD. YOU RISK YOUR ACCOUNT FROM GETTING BANNED
     ## USE MODE 5 IN BURST MODE, USE IT TO UNFOLLOW PEOPLE AS MANY AS YOU WANT IN SHORT TIME PERIOD
 
-    mode = 0
+    mode = raw_input('Select an Option to start the system running');
 
     #print("You choose mode : %i" %(mode))
     #print("CTRL + C to cancel this operation or wait 30 seconds to start")
